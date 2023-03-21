@@ -7,4 +7,5 @@ A Website for Car Dealers
 HTML, CSS, SCSS
 
 <h2>GIF of the Project</h2>
+
 ![](skyline.gif)
