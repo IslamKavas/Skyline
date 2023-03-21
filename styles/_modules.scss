@@ -1,0 +1,55 @@
+@import 'variables';
+
+%heading {
+    font-family: $second-font;
+    color: $text-color;
+
+}
+%p {
+    color: #45484e;
+    font-size: 17px;
+}
+%button {
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+%design {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        @extend %heading;
+    }
+    p {
+        @extend %p;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 300;
+        max-width: 500px;
+    }
+    button {
+        @extend %button;
+        border-radius: 0;
+        background-color: transparent;
+        border: 1px solid white;
+        transition: background-color 0.4s;
+        padding: 15px 40px;
+        &:hover {
+            background-color: white;
+            color: black;
+            transform: all 0.4s;
+        }
+
+    }
+}
